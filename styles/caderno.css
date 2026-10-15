@@ -1,0 +1,22 @@
+/* Estilo "caderno": papel claro, cartões com borda preta e sombra dura, marca-texto amarelo.
+   Câmera: viaja num mapa contínuo entre as cenas (afasta o zoom no caminho). */
+:root { --bg:#F3EEE3; --ink:#141414; --muted:#6b6458; --accent:#FF5A1F; --c2:#2457FF; --c3:#14A06A;
+        --hl:#FFD84D; --line:#d9d0b8; --chip:#141414; --chipink:#fff; --panel:#fff; }
+#world { background-image:radial-gradient(rgba(20,20,20,.16) 2px, transparent 2.5px); background-size:44px 44px; }
+.frame { border:3px solid var(--ink); background:rgba(255,255,255,.55); }
+.num { color:var(--hl); -webkit-text-stroke:4px var(--ink); }
+.box, .fb, .bub, .big3 b { background:var(--panel); border:3px solid var(--ink); box-shadow:8px 8px 0 var(--ink); }
+.card, .opt { box-shadow:5px 5px 0 var(--ink); }
+.note { background:#FFFBEA; }
+.stamp { background:rgba(255,255,255,.75); }
+.ab-icon { border:4px solid var(--ink); }
+.ab-img { border-radius:12px; border:3px solid var(--ink); background:#111; }
+.term { border:3px solid var(--ink); box-shadow:8px 8px 0 var(--accent); }
+.row .ic { border:3px solid var(--ink); background:var(--hl); }
+.row .chip { background:#fff; color:var(--ink); border:3px solid var(--ink); }
+.shotbox { background:#fff; }
+.big3 b { background:var(--hl); }
+.subbtn { border:4px solid var(--ink); box-shadow:8px 8px 0 var(--ink); }
+.end-logo .a { color:var(--accent); }
+.capin { padding:12px 18px; border-radius:18px; background:rgba(255,255,255,.94); border:3px solid var(--ink); font-size:52px; color:var(--ink); }
+#grain { opacity:.10; mix-blend-mode:multiply; }

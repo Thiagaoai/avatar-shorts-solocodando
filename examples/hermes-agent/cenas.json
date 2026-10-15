@@ -1,0 +1,48 @@
+{
+  "estilo": "moderno",
+  "intro": [
+    {"tipo": "balao", "texto": "ChatGPT: esquece tudo", "em": "esquece", "riscar_em": "esquece+0.8"},
+    {"tipo": "balao", "texto": "Hermes: lembra ✓", "em": "não esquece", "destaque": true},
+    {"tipo": "numeros", "valores": ["1", "2", "3"], "em": "três coisas"}
+  ],
+  "cenas": [
+    {"tipo": "abertura", "icone": "assets/hermes-icon.png", "icone_em": "Hermes", "imagem": "assets/banner.png", "imagem_em": "Hermes,",
+     "kicker": "by Nous Research", "kicker_em": "Nous",
+     "carimbos": [{"texto": "OPEN SOURCE", "em": "open"}, {"texto": "MIT", "em": "MIT"}, {"texto": "GRÁTIS", "em": "grátis"}],
+     "nota": {"texto": "usar ✓  modificar ✓  compartilhar ✓", "em": "modificar"}},
+    {"tipo": "passos", "inicio": "Número um", "numero": "01", "titulo": "Cria as próprias *habilidades*", "titulo_em": "cria",
+     "passos": [{"texto": "Tarefa difícil", "em": "tarefa complicada"}, {"texto": "Resolve", "em": "resolve"}, {"texto": "Salva a skill", "em": "salva"}],
+     "nota": {"titulo": "SKILL.md", "linhas": ["1. entender o pedido", "2. o que funcionou", "3. o que evitar"], "em": "anota"},
+     "carimbos": [{"texto": "NÃO COMEÇA DO ZERO", "em": "zero", "cor": "3"}, {"texto": "PADRÃO ABERTO ↗", "em": "padrão aberto", "cor": "2"}]},
+    {"tipo": "busca", "inicio": "Número dois", "numero": "02", "titulo": "Lembra de *você*", "titulo_em": "lembra",
+     "busca": {"texto": "o que eu falei semanas atrás?", "em": "banco"},
+     "cartoes": [{"texto": "\"prefiro resumo curto\"", "meta": "3 SEMANAS ATRÁS", "em": "resume", "destaque_em": "semanas"},
+                 {"texto": "\"o deploy é na sexta\"", "meta": "2 SEMANAS ATRÁS", "em": "resume"},
+                 {"texto": "\"use TypeScript\"", "meta": "ONTEM", "em": "resume"}],
+     "chips": [{"texto": "entende seu jeito", "em": "entendendo"}, {"texto": "sessão após sessão", "em": "trabalha", "cor": "#FF5A1F"}]},
+    {"tipo": "comparar", "inicio": "Número três", "numero": "03", "titulo": "Seu PC pode ficar *desligado*", "titulo_em": "depende",
+     "esquerda": {"icone": "💻", "rotulo": "SEU PC · OFF", "em": "computador", "apagar_em": "servidor"},
+     "direita": {"icone": "🗄️", "rotulo": "SERVIDOR · ON", "em": "servidor"},
+     "chips": [{"texto": "Telegram", "em": "Telegram", "cor": "#229ED9"}, {"texto": "WhatsApp", "em": "WhatsApp", "cor": "#25D366"}],
+     "audio": {"em": "áudio", "linhas": [{"texto": "› transcrevendo…", "em": "transcreve"}, {"texto": "✓ trabalhando na nuvem", "em": "máquina"}]}},
+    {"tipo": "lista", "inicio": "E tem mais", "titulo": "E tem *mais.*",
+     "itens": [{"icone": "⏰", "titulo": "Agenda tarefas", "sub": "toda segunda, 8h → relatório", "em": "agenda"},
+               {"icone": "⑂", "titulo": "Subagentes", "sub": "trabalho pesado dividido", "em": "divide"},
+               {"icone": ".py", "titulo": "Scripts em Python", "sub": "vários passos em um só", "em": "scripts"},
+               {"icone": "⌘", "titulo": "Roda em tudo", "em": "roda em",
+                "chips": [{"texto": "Linux", "em": "Linux"}, {"texto": "Mac", "em": "Mac"}, {"texto": "Windows", "em": "Windows"}, {"texto": "Android", "em": "Android"}]}]},
+    {"tipo": "terminal", "inicio": "Se você já usa", "titulo": "Vem do *OpenClaw?*", "comando": "hermes claw migrate", "em": "hermes claw",
+     "progresso": true, "saida": [{"texto": "✓ migração concluída"}], "carimbo": {"texto": "1 COMANDO", "em": "migrar"}},
+    {"tipo": "opcoes", "inicio": "O modelo de IA", "titulo": "Você escolhe *o modelo*",
+     "opcoes": [{"texto": "Nous Portal", "em": "Nous Portal"}, {"texto": "OpenRouter", "em": "OpenRouter"}, {"texto": "OpenAI", "em": "OpenAI"}, {"texto": "Seu próprio servidor", "em": "próprio servidor"}],
+     "carimbo": {"texto": "$ hermes model", "em": "trocar", "cor": "2"}},
+    {"tipo": "terminal", "inicio": "Instalar é uma linha", "titulo": "Instala em *1 linha*",
+     "comando": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash", "em": "linha",
+     "saida": [{"texto": "★ github.com/NousResearch/hermes-agent", "em": "GitHub"}]}
+  ],
+  "final": [
+    {"tipo": "balao", "texto": "SIM ou NÃO? 👇", "em": "deixaria"},
+    {"tipo": "inscrever", "texto": "Inscreva-se", "em": "inscreve"}
+  ],
+  "card_final": {"titulo": "Solo*codando*", "subtitulo": "IA na prática", "pergunta": "Comenta: SIM ou NÃO?"}
+}

@@ -1,0 +1,13 @@
+# segredos
+.env
+config.json
+# projetos gerados (vídeos, áudios, renders)
+projetos/
+*.mp4
+*.wav
+*.mp3
+!examples/**/*.png
+.hyperframes/
+node_modules/
+__pycache__/
+.DS_Store

@@ -1,0 +1,28 @@
+{
+  "canal": {
+    "nome": "Meu Canal",
+    "handle": "@meucanal",
+    "slogan": "IA na prática",
+    "cta": "Se inscreve no canal para ver mais"
+  },
+  "voz": {
+    "voice_id": "COLE_AQUI_O_VOICE_ID_DO_ELEVENLABS",
+    "model_id": "eleven_multilingual_v2",
+    "idioma": "pt",
+    "velocidade": 1.25,
+    "stability": 0.5,
+    "similarity_boost": 0.75
+  },
+  "avatar": {
+    "usar": "inicio_e_fim",
+    "look_id": "COLE_AQUI_O_LOOK_ID_DO_HEYGEN",
+    "engine": "avatar_v"
+  },
+  "musica": {
+    "usar": true,
+    "abaixo_da_voz_db": 21
+  },
+  "loudness_final_lufs": -14,
+  "estilo": "moderno",
+  "legendas": true
+}

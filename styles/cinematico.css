@@ -1,0 +1,28 @@
+/* Estilo "cinemático": fundo escuro com grade 3D "voando", partículas, dourado + ciano, glitch nos cortes.
+   Câmera: cada cena entra em chicote com blur, se aproxima devagar e sai; flash no corte. */
+:root { --bg:#050811; --ink:#f5f7fb; --muted:#9aa7bd; --accent:#FFD24A; --c2:#38bdf8; --c3:#10b981;
+        --hl:#FFD24A; --line:#2a3554; --chip:#1b2540; --chipink:#f5f7fb; --panel:rgba(12,18,34,.85); }
+#bgfx { position:absolute; inset:0; background:radial-gradient(900px 900px at 50% 30%, #13203d 0%, #070b18 55%, #03050c 100%); }
+#floorwrap { position:absolute; left:-600px; right:-600px; top:980px; height:1400px; perspective:700px; }
+#floor { position:absolute; inset:0; transform-origin:50% 0%; transform:rotateX(72deg);
+  background-image:linear-gradient(rgba(255,210,74,.28) 2px, transparent 2px), linear-gradient(90deg, rgba(56,189,248,.22) 2px, transparent 2px); background-size:120px 120px; }
+#floorfade { position:absolute; left:0; right:0; top:900px; height:600px; background:linear-gradient(180deg,#050811 0%, rgba(5,8,17,0) 60%); }
+#parts { position:absolute; inset:0; }
+.pt { position:absolute; border-radius:50%; background:#cfe8ff; box-shadow:0 0 10px #7cc8ff; }
+.frame { display:none; }
+.num { color:var(--accent); text-shadow:0 0 40px rgba(255,210,74,.45); }
+.box, .fb, .bub { background:var(--panel); border:2px solid rgba(255,210,74,.35); box-shadow:0 30px 90px rgba(0,0,0,.6); color:var(--ink); }
+.note { background:rgba(12,18,34,.9); }
+.stamp { background:rgba(5,8,17,.6); }
+.ab-icon { box-shadow:0 0 0 4px rgba(255,210,74,.6), 0 0 90px rgba(255,210,74,.45); }
+.ab-img { mix-blend-mode:lighten; }
+.term { border:2px solid rgba(56,189,248,.4); box-shadow:0 40px 120px rgba(0,0,0,.7); background:#0a0f1c; }
+.row .ic { background:rgba(255,210,74,.15); border:2px solid var(--accent); }
+.row .chip { background:transparent; color:var(--ink); border:2px solid var(--c2); }
+.fa { background:var(--accent); }
+.shotbox { background:#0a0f1c; border:2px solid rgba(56,189,248,.35); }
+.big3 b { background:var(--accent); color:#050811; border:none; }
+.subbtn { box-shadow:0 20px 60px rgba(255,31,31,.45); }
+.end-logo .a { color:var(--accent); }
+.capin { font-size:66px; color:#fff; text-transform:uppercase; text-shadow:0 0 2px #000, 0 4px 0 #000, 0 6px 26px rgba(0,0,0,.95); }
+#grain { opacity:.08; mix-blend-mode:overlay; }

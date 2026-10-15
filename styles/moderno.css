@@ -1,0 +1,61 @@
+/* Estilo "moderno" (padrão): visual de IA limpo e chamativo.
+   Preto profundo + aurora em gradiente (violeta → azul → ciano) em movimento, rede neural sutil com pulsos,
+   cartões de vidro fosco com borda luminosa, destaques em gradiente. Câmera: transições suaves com foco. */
+:root { --bg:#06060b; --ink:#f4f5fb; --muted:#9ca3c4; --accent:#a78bfa; --c2:#22d3ee; --c3:#34d399;
+        --hl:#7c3aed; --line:rgba(255,255,255,.12); --chip:rgba(255,255,255,.08); --chipink:#f4f5fb; --panel:rgba(255,255,255,.06); }
+
+/* fundo */
+#aurora { position:absolute; inset:0; overflow:hidden; background:#06060b; }
+.blob { position:absolute; width:900px; height:900px; border-radius:50%; filter:blur(120px); opacity:.55; }
+#b1 { left:-300px; top:-200px; background:#7c3aed; }
+#b2 { left:420px; top:520px; background:#2563eb; opacity:.45; }
+#b3 { left:-160px; top:1150px; background:#06b6d4; opacity:.35; }
+#b4 { left:520px; top:-260px; background:#db2777; opacity:.22; }
+#grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+        background-size:72px 72px; -webkit-mask-image:radial-gradient(ellipse 70% 55% at 50% 45%, #000 30%, transparent 75%); }
+#net { position:absolute; inset:0; opacity:.55; }
+#net line { stroke:rgba(167,139,250,.25); stroke-width:2; }
+#net .pulse { stroke:#67e8f9; stroke-width:3; stroke-linecap:round; stroke-dasharray:24 600; }
+#net circle { fill:#c4b5fd; }
+
+.frame { display:none; }
+.a { background:linear-gradient(90deg,#c4b5fd 0%,#a78bfa 35%,#22d3ee 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.num { background:linear-gradient(180deg,#ffffff 0%,#a78bfa 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; font-size:140px; }
+.title { font-size:80px; }
+.kick { color:#c4b5fd; }
+
+/* vidro */
+.box, .fb, .bub { background:linear-gradient(160deg, rgba(255,255,255,.10), rgba(255,255,255,.03)); border:1.5px solid rgba(255,255,255,.16);
+  box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.18); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); color:var(--ink); }
+.fb { border-radius:24px; }
+.note { background:linear-gradient(160deg, rgba(124,58,237,.18), rgba(255,255,255,.03)); }
+.stamp { border:2px solid transparent; border-radius:999px; padding:12px 26px; font-size:28px; color:#fff;
+  background:linear-gradient(#0d0d18,#0d0d18) padding-box, linear-gradient(90deg,#a78bfa,#22d3ee) border-box; box-shadow:0 0 30px rgba(124,58,237,.45); }
+.stamp.c2 { background:linear-gradient(#0d0d18,#0d0d18) padding-box, linear-gradient(90deg,#22d3ee,#3b82f6) border-box; box-shadow:0 0 30px rgba(34,211,238,.35); }
+.stamp.c3 { background:linear-gradient(#0d0d18,#0d0d18) padding-box, linear-gradient(90deg,#34d399,#22d3ee) border-box; box-shadow:0 0 30px rgba(52,211,153,.35); }
+.side-stamp { border-radius:22px; }
+.chip { border:1px solid rgba(255,255,255,.18); }
+.ab-icon { border-radius:64px; box-shadow:0 0 0 2px rgba(255,255,255,.25), 0 0 80px rgba(124,58,237,.7), 0 0 160px rgba(34,211,238,.35); }
+.ab-img { mix-blend-mode:lighten; }
+.term { background:rgba(8,8,16,.82); border:1.5px solid rgba(167,139,250,.35); box-shadow:0 40px 120px rgba(0,0,0,.6), 0 0 60px rgba(124,58,237,.25); backdrop-filter:blur(16px); }
+.term .bar { background:rgba(255,255,255,.05); }
+.prog b { background:linear-gradient(90deg,#7c3aed,#22d3ee); }
+.fa { background:linear-gradient(90deg,#a78bfa,#22d3ee); }
+.row .ic { background:linear-gradient(135deg, rgba(124,58,237,.45), rgba(34,211,238,.25)); border:1px solid rgba(255,255,255,.2); }
+.row .chip { background:rgba(255,255,255,.06); }
+.card span { color:#a5b4fc; }
+.shotbox { background:rgba(8,8,16,.7); padding:14px; }
+.shotbox img { border-radius:16px; }
+.stat .v { background:linear-gradient(180deg,#fff,#a78bfa 70%,#22d3ee); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.big3 b { background:linear-gradient(135deg,#7c3aed,#22d3ee); color:#fff; border:none; box-shadow:0 20px 60px rgba(124,58,237,.5); }
+.subbtn { background:linear-gradient(90deg,#ff2d55,#ff5e3a); box-shadow:0 20px 60px rgba(255,45,85,.45); }
+.end-logo { font-size:104px; }
+#avl1, #avl2 { border-radius:0; }
+
+/* legenda: branca, palavra falada numa pílula violeta */
+.capin { font-size:60px; color:#fff; text-shadow:0 4px 24px rgba(0,0,0,.85); }
+.cw { padding:2px 12px; border-radius:14px; }
+#grain { opacity:.06; mix-blend-mode:overlay; }
+#scan { background:linear-gradient(100deg, transparent 35%, rgba(255,255,255,.14) 50%, transparent 65%); mix-blend-mode:screen; }
+/* balões sobre o avatar: mais sólidos para ler bem em cima do vídeo */
+.ov .bub { background:rgba(10,10,22,.82); color:#fff; border:1.5px solid rgba(167,139,250,.6); box-shadow:0 20px 60px rgba(0,0,0,.6), 0 0 40px rgba(124,58,237,.35); }

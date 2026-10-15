@@ -30,3 +30,5 @@ ou outro avatar num vídeo específico.
   `voice.py --force meio`, `music.py mixar`, `transcribe.py` e `build.py` de novo.
 - **Música alta**: aumente `musica.abaixo_da_voz_db` e rode `music.py mixar` + render.
 - **Render lento ou travado**: feche outros apps pesados; o render usa o Chrome headless do HyperFrames.
+- **Render para com "Disk capture may need … MB"**: o modo paralelo guarda todos os quadros no disco
+  (~1 GB a cada 15 s de vídeo). Rode com `--workers 1`, que grava direto no MP4 (mais lento, quase sem disco).
